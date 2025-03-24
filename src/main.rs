@@ -32,8 +32,10 @@ fn main() {
             })
             .collect();
 
-        let disabled_features: Vec<_> = all_features.difference(&enabled_features).collect();
-        let enabled_features: Vec<_> = enabled_features.iter().collect();
+        let mut disabled_features: Vec<_> = all_features.difference(&enabled_features).collect();
+        let mut enabled_features: Vec<_> = enabled_features.iter().collect();
+        enabled_features.sort();
+        disabled_features.sort();
         println!("Enabled: {:?}", enabled_features);
         println!("Disabled: {:?}", disabled_features);
     } else {
