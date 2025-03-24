@@ -1,6 +1,6 @@
 [package]
 name = "fcheck"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 license = "MIT"
 description = "tool for checking enabled and disabled features of a specified crate within a cargo project"
