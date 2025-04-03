@@ -7,7 +7,7 @@ description = "Cool tool for checking enabled and disabled features of a specifi
 repository = "https://github.com/urparvezali/fcheck"
 readme = "readme.md"
 keywords = ["cli", "tool", "feature", "check", "cargo"]
-categories = ["command-line-utilities", "Development tools"]
+categories = ["command-line-utilities", "development-tools"]
 
 
 [dependencies]
