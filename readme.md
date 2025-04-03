@@ -11,8 +11,9 @@ within a cargo project type
 fcheck <Name of a crate added to the project>
 `
 ## example
+command:
 `
-command: fcheck serde
+ fcheck serde
 `
 
 Output:
