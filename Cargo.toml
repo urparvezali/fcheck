@@ -1,13 +1,13 @@
 [package]
 name = "fcheck"
-version = "0.1.5"
+version = "0.1.6"
 edition = "2024"
 license = "MIT"
-description = "tool for checking enabled and disabled features of a specified crate within a cargo project"
+description = "Cool tool for checking enabled and disabled features of a specified crate within a cargo project"
 repository = "https://github.com/urparvezali/fcheck"
 readme = "readme.md"
 keywords = ["cli", "tool", "feature", "check", "cargo"]
-categories = ["command-line-utilities"]
+categories = ["command-line-utilities", "Development tools"]
 
 
 [dependencies]
