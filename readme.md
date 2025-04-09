@@ -27,5 +27,6 @@ Disabled: ["unstable"]
 
 
 ### contact:
-<a href="https://linkedin.com/in/urparvezali">LinkedIn - urparvezali</a>
+<a href="https://linkedin.com/in/urparvezali" target="_blank">LinkedIn - urparvezali</a>
+<br/>
 <a href="mailto:urparvezali@gmail.com">Email - Click</a>
