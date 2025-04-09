@@ -1,9 +1,9 @@
 # fcheck
-tool for checking enabled and disabled features of a specified crate within a cargo project
+Cool tool for checking enabled and disabled features of a specified crate within a cargo(Rust) project
 
 ## Installation
 `
-cargo install fcheck --locked
+cargo install fcheck
 `
 ## Uses
 within a cargo project type
@@ -21,3 +21,11 @@ Output:
 Enabled: ["alloc", "default", "derive", "rc", "serde_derive", "std"]
 Disabled: ["unstable"]
 ```
+
+
+
+
+
+### contact:
+<a href="https://linkedin.com/in/urparvezali">LinkedIn - urparvezali</a>
+<a href="mailto:urparvezali@gmail.com">Email - Click</a>
