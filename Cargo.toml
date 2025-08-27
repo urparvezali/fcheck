@@ -1,6 +1,6 @@
 [package]
 name = "fcheck"
-version = "0.1.9"
+version = "0.2.0"
 edition = "2024"
 license = "MIT"
 description = "Cool tool for checking enabled and disabled features of a specified crate within a cargo project"
@@ -11,7 +11,7 @@ categories = ["command-line-utilities", "development-tools"]
 
 
 [dependencies]
-cargo_metadata = "0.19.2"
+cargo_metadata = "0.22.0"
 
 [[bin]]
 name = "fcheck"

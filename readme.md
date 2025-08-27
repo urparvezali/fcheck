@@ -18,8 +18,17 @@ command:
 
 Output:
 ```
-Enabled: ["alloc", "default", "derive", "rc", "serde_derive", "std"]
-Disabled: ["unstable"]
+>> fcheck serde
+serde:
+├── Enabled:
+│   ├── default
+│   ├── derive
+│   ├── serde_derive
+│   ├── std
+└── Disabled:
+    ├── alloc
+    ├── rc
+    ├── unstable
 ```
 
 

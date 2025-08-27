@@ -30,7 +30,10 @@ fn fetch_metadata() -> Result<Metadata, Box<dyn std::error::Error>> {
 /// # Returns
 /// * An optional reference to the found package
 fn find_package<'a>(metadata: &'a Metadata, name: &str) -> Option<&'a Package> {
-    metadata.packages.iter().find(|pkg| pkg.name == name)
+    metadata
+        .packages
+        .iter()
+        .find(|pkg| pkg.name.as_str() == name)
 }
 
 /// Prints the enabled and disabled features of a package
@@ -73,10 +76,15 @@ fn print_features(metadata: &Metadata, pkg: &Package) {
         .keys()
         .filter(|&f| {
             metadata.resolve.as_ref().map_or(false, |resolve| {
-                resolve
-                    .nodes
-                    .iter()
-                    .any(|node| node.id == pkg.id && node.features.contains(f))
+                resolve.nodes.iter().any(|node| {
+                    node.id == pkg.id
+                        && node
+                            .features
+                            .iter()
+                            .map(|featurename| featurename.to_string())
+                            .collect::<HashSet<String>>()
+                            .contains(f)
+                })
             })
         })
         .collect();
