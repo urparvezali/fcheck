@@ -18,7 +18,6 @@ command:
 
 Output:
 ```
->> fcheck serde
 serde:
 ├── Enabled:
 │   ├── default
