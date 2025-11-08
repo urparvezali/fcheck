@@ -5,6 +5,10 @@ Cool tool for checking enabled and disabled features of a specified crate within
 `
 cargo install fcheck
 `
+or
+`
+cargo install fcheck --locked
+`
 ## Uses
 within a cargo project type
 `
